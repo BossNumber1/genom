@@ -1,3 +1,5 @@
+// implementation of movement and rotation
+
 dragElement(document.getElementsByClassName("protractor")[0]);
 
 const rotationFunction = new Propeller(
@@ -45,8 +47,6 @@ function dragElement(element) {
 document
     .getElementsByClassName("protractor")[0]
     .addEventListener("mousedown", (e) => {
-        // document.getElementsByClassName("protractor")[0].style.transform =
-        //     "scale(2)";
         if (
             (e.target.className !== "leftEdge" ||
                 e.target.className !== "rightEdge") &&
@@ -72,15 +72,11 @@ document
                 e.target.className === "rightEdge") &&
             e.target.className !== "imgProtractor"
         ) {
-            // document.getElementsByClassName("protractor")[0].style.transform =
-            //     "scale(2)";
             rotationFunction.onRotated(e);
         }
     });
 
-// document.getElementsByClassName("protractor")[0].onclick = function () {
-//     alert("exc");
-// };
+// collecting results
 
 let angles = {
     BAC: 0,
