@@ -58,17 +58,6 @@ body {
     top: 102px;
 }
 
-/* .app .protractor {
-    top: 237px;
-    left: 362px;
-} */
-
-.app .protractor img {
-    width: 199.77px;
-    height: 105.17px;
-    cursor: grab;
-}
-
 .btnSend input {
     justify-content: center;
     align-items: center;
@@ -100,6 +89,10 @@ body {
     position: absolute;
     top: 121px;
     display: flex;
+}
+
+.imgProtractor {
+    cursor: grab;
 }
 
 .leftEdge,
