@@ -41,7 +41,7 @@ body {
     margin-right: 30px;
 }
 
-.app .titlePage {
+.titlePage {
     top: 45px;
     left: 343px;
     width: 485px;
@@ -58,10 +58,10 @@ body {
     top: 102px;
 }
 
-.app .protractor {
+/* .app .protractor {
     top: 237px;
     left: 362px;
-}
+} */
 
 .app .protractor img {
     width: 199.77px;
@@ -125,6 +125,7 @@ body {
     position: relative;
     left: 301px;
     top: 150px;
+    width: 100px;
 }
 
 .inputData {
