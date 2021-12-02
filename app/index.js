@@ -81,3 +81,44 @@ document
 // document.getElementsByClassName("protractor")[0].onclick = function () {
 //     alert("exc");
 // };
+
+let angles = {
+    BAC: 0,
+    ABC: 0,
+    BCA: 0,
+};
+
+document.getElementById("BAC").onchange = function (e) {
+    if (e.target.value == 65) {
+        angles.BAC = "верное";
+    } else {
+        angles.BAC = "неверное";
+    }
+};
+
+document.getElementById("ABC").onchange = function (e) {
+    if (e.target.value == 90) {
+        angles.ABC = "верное";
+    } else {
+        angles.ABC = "неверное";
+    }
+};
+
+document.getElementById("BCA").onchange = function (e) {
+    if (e.target.value == 50) {
+        angles.BCA = "верное";
+    } else {
+        angles.BCA = "неверное";
+    }
+};
+
+document.getElementById("submit").onclick = function () {
+    alert(
+        "Значение угла: BAC - " +
+            angles.BAC +
+            ", ABC - " +
+            angles.ABC +
+            ", BCA - " +
+            angles.BCA
+    );
+};
