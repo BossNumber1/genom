@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+* {
+    position: relative;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.app {
+    width: 1170px;
+    height: 575px;
+    left: calc(50% - 1170px / 2);
+    top: 10px;
+    box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.05);
+    border: 0.5px solid #369cb7;
+    border-radius: 7px;
+    margin-bottom: 51px;
+}
+
+.app .inputs {
+    display: flex;
+    left: 301px;
+    top: 153px;
+    width: 572px;
+}
+
+.app .inputs div {
+    margin-right: 30px;
+}
+
+.app .titlePage {
+    top: 45px;
+    left: 343px;
+    width: 485px;
+    height: 22px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2f2f2f;
+}
+
+.app .triangle {
+    left: 321px;
+    top: 102px;
+}
+
+.app .protractor {
+    top: 237px;
+    left: 362px;
+}
+
+.app .protractor img {
+    width: 199.77px;
+    height: 105.17px;
+    cursor: grab;
+}
+
+.btnSend input {
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #369cb7;
+    flex-direction: column;
+    padding: 20px;
+    width: 200px;
+    height: 40px;
+    background: #369cb7;
+    border: 0.5px solid #369cb7;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 47px;
+    margin-left: calc(50% - 200px / 2);
+}
+
+.protractorBig {
+    top: 175.42px;
+    left: 70.01px;
+}
+
+.protractorBig img {
+    width: 397px;
+    height: 209px;
+    cursor: grab;
+}
+
+.protractorPrimordial {
+    top: 237px;
+    left: 362px;
+}
+
+.protractorPrimordial img {
+    width: 397px;
+    height: 209px;
+    cursor: grab;
+}
+
+#steeringArea,
+#displacementArea,
+#rightRotationArea {
+    z-index: 11;
+    font-size: 26px;
+    color: wheat;
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+}
+
+#displacementArea,
+#rightRotationArea {
+    position: absolute;
+    top: 207px;
+}
+
+#steeringArea {
+    top: 210px;
+    left: -30px;
+}
+
+#displacementArea {
+    left: 145px;
+}
+
+#rightRotationArea {
+    left: 325px;
+}
+
+.instruments {
+    display: flex;
+}
+
+/* protractor styles */
+
+.protractor {
+    position: absolute;
+    top: 121px;
+    display: flex;
+}
+
+.leftEdge,
+.rightEdge {
+    /* background-color: aqua; */
+    display: flex;
+    /* top: 50px; */
+    width: 50px;
+    height: 107px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.rightEdge {
+    left: 81%;
+}

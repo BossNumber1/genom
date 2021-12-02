@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>genom</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script
+            type="text/javascript"
+            src="./propeller/src/propeller.js"
+        ></script>
+    </head>
+    <body>
+        <div class="app">
+            <div class="titlePage">
+                Measure the angles of a triangle using a protractor
+            </div>
+            <div class="instruments">
+                <div class="triangle">
+                    <img src="./pictures/triangle.png" alt="triangle" />
+                </div>
+                <!-- <div draggable="true" id="protractor">
+                    <div id="steeringArea"></div>
+                    <div id="displacementArea"></div>
+                    <div id="rightRotationArea"></div>
+                </div> -->
+                <div class="protractor">
+                    <div class="leftEdge"></div>
+                    <img
+                        src="./pictures/protractor.svg"
+                        alt="protractor"
+                        class="imgProtractor"
+                    />
+                    <div class="rightEdge"></div>
+                </div>
+            </div>
+
+            <div class="inputs">
+                <div>
+                    <img src="./pictures/BAC.svg" alt="angle BAC" />
+                </div>
+                <div>
+                    <img src="./pictures/ABC.svg" alt="angle ABC" />
+                </div>
+                <div>
+                    <img src="./pictures/BCA.svg" alt="angle BCA" />
+                </div>
+            </div>
+        </div>
+        <div class="btnSend">
+            <input type="button" value="Submit" />
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
