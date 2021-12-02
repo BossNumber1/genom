@@ -169,3 +169,31 @@ body {
 .rightEdge {
     left: 81%;
 }
+
+/* inputs styles */
+
+.inputsCollection {
+    display: flex;
+    position: relative;
+    left: 301px;
+    top: 150px;
+}
+
+.inputData {
+    display: flex;
+    margin-right: 30px;
+}
+
+.inputData img {
+    margin-right: 10px;
+}
+
+.inputContent {
+    position: relative;
+    width: 91px;
+    height: 40px;
+    border: 1px solid #369cb7;
+    border-radius: 5px;
+    /* left: 917px;
+    top: 733px; */
+}
