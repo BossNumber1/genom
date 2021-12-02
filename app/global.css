@@ -90,58 +90,6 @@ body {
     margin-left: calc(50% - 200px / 2);
 }
 
-.protractorBig {
-    top: 175.42px;
-    left: 70.01px;
-}
-
-.protractorBig img {
-    width: 397px;
-    height: 209px;
-    cursor: grab;
-}
-
-.protractorPrimordial {
-    top: 237px;
-    left: 362px;
-}
-
-.protractorPrimordial img {
-    width: 397px;
-    height: 209px;
-    cursor: grab;
-}
-
-#steeringArea,
-#displacementArea,
-#rightRotationArea {
-    z-index: 11;
-    font-size: 26px;
-    color: wheat;
-    width: 100px;
-    height: 45px;
-    cursor: pointer;
-}
-
-#displacementArea,
-#rightRotationArea {
-    position: absolute;
-    top: 207px;
-}
-
-#steeringArea {
-    top: 210px;
-    left: -30px;
-}
-
-#displacementArea {
-    left: 145px;
-}
-
-#rightRotationArea {
-    left: 325px;
-}
-
 .instruments {
     display: flex;
 }
