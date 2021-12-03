@@ -87,18 +87,10 @@ body {
 
 .protractor {
     position: absolute;
-    top: 121px;
+    top: 277px;
+    left: 934px;
     display: flex;
 }
-
-/* .protractor {
-    position: absolute;
-    display: flex;
-    /* justify-content: space-between;
-    align-items: center; */
-/*  padding-top: 277px;
-    padding-left: 934px;
-} */
 
 .imgProtractor {
     cursor: grab;
@@ -118,7 +110,6 @@ body {
 
 .rightEdge {
     left: 81%;
-    /* padding-left: 70px; */
 }
 
 /* inputs styles */
