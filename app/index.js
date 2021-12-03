@@ -54,19 +54,6 @@ document
         ) {
             rotationFunction.stop();
 
-            //  if (e.target.className === "leftEdge") {
-            //      // alert("left!");
-
-            //      let elem = document.getElementsByClassName("imgProtractor")[0];
-            //      elem.src = "./pictures/protractorLeftSelected.svg";
-
-            //      console.log("elem =", elem);
-            //  }
-
-            //  if (e.target.className === "rightEdge") {
-            //      // alert("right!");
-            //  }
-
             document.getElementsByClassName("imgProtractor")[0].style.width =
                 "300px";
             document.getElementsByClassName("imgProtractor")[0].style.height =
@@ -100,31 +87,21 @@ document
     .getElementsByClassName("protractor")[0]
     .addEventListener("mousedown", (e) => {
         if (e.target.className === "leftEdge") {
-            // alert("left!");
-
             let elem = document.getElementsByClassName("imgProtractor")[0];
             elem.src = "./pictures/protractorLeftSelected.svg";
 
             document.getElementsByClassName("imgProtractor")[0].style.width =
-                "300px"; //201
+                "300px";
             document.getElementsByClassName("imgProtractor")[0].style.height =
-                "155px"; //106
-
-            // elem.style.width = "300px";
-            // elem.style.height = "300px";
+                "155px";
 
             document.getElementsByClassName("leftEdge")[0].style.height =
                 "155px";
             document.getElementsByClassName("rightEdge")[0].style.height =
                 "155px";
 
-            // document.getElementsByClassName("leftEdge")[0].style.top = "0px";
-            // document.getElementsByClassName("rightEdge")[0].style.top = "0px";
-
             document.getElementsByClassName("imgProtractor")[0].style.top =
                 "67px";
-
-            console.log("elem =", elem);
         }
 
         if (e.target.className === "rightEdge") {
