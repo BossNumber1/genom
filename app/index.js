@@ -47,6 +47,28 @@ function dragElement(element) {
 document
     .getElementsByClassName("protractor")[0]
     .addEventListener("mousedown", (e) => {
+        // создаю замену картинки при клике по левому краю
+
+        if (e.target.className === "leftEdge") {
+            let elem = document.getElementsByClassName("imgProtractor")[0];
+            elem.src = "./pictures/protractorLeftSelected.svg";
+
+            document.getElementsByClassName("imgProtractor")[0].style.width =
+                "300px";
+            document.getElementsByClassName("imgProtractor")[0].style.height =
+                "155px";
+
+            document.getElementsByClassName("leftEdge")[0].style.height =
+                "155px";
+            document.getElementsByClassName("rightEdge")[0].style.height =
+                "155px";
+
+            document.getElementsByClassName("imgProtractor")[0].style.top =
+                "67px";
+        }
+
+        // при клике по основной части останавливаем вращение, увеличиваем транспортир и запускаем перемещение
+
         if (
             (e.target.className !== "leftEdge" ||
                 e.target.className !== "rightEdge") &&
@@ -72,40 +94,21 @@ document
             dragElement(document.getElementsByClassName("protractor")[0]);
         }
 
+        // создаю замену картинки при клике по правому краю
+
+        if (e.target.className === "rightEdge") {
+            let elem = document.getElementsByClassName("imgProtractor")[0];
+            elem.src = "./pictures/protractorRightSelected.svg";
+        }
+
+        // при манипуляциях с любым из краёв запускаем вращение
+
         if (
             (e.target.className === "leftEdge" ||
                 e.target.className === "rightEdge") &&
             e.target.className !== "imgProtractor"
         ) {
             rotationFunction.onRotated(e);
-        }
-    });
-
-// creating animation for buttons
-
-document
-    .getElementsByClassName("protractor")[0]
-    .addEventListener("mousedown", (e) => {
-        if (e.target.className === "leftEdge") {
-            let elem = document.getElementsByClassName("imgProtractor")[0];
-            elem.src = "./pictures/protractorLeftSelected.svg";
-
-            document.getElementsByClassName("imgProtractor")[0].style.width =
-                "300px";
-            document.getElementsByClassName("imgProtractor")[0].style.height =
-                "155px";
-
-            document.getElementsByClassName("leftEdge")[0].style.height =
-                "155px";
-            document.getElementsByClassName("rightEdge")[0].style.height =
-                "155px";
-
-            document.getElementsByClassName("imgProtractor")[0].style.top =
-                "67px";
-        }
-
-        if (e.target.className === "rightEdge") {
-            // alert("right!");
         }
     });
 
