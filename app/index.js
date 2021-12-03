@@ -65,6 +65,8 @@ document
 
             document.getElementsByClassName("imgProtractor")[0].style.top =
                 "67px";
+
+            localStorage.setItem("changed", "true");
         }
 
         // при клике по основной части останавливаем вращение, увеличиваем транспортир и запускаем перемещение
@@ -75,6 +77,9 @@ document
             e.target.className === "imgProtractor"
         ) {
             rotationFunction.stop();
+
+            let elem = document.getElementsByClassName("imgProtractor")[0];
+            elem.src = "./pictures/protractor.svg";
 
             document.getElementsByClassName("imgProtractor")[0].style.width =
                 "300px";
@@ -91,6 +96,11 @@ document
             document.getElementsByClassName("rightEdge")[0].style.left =
                 "82.5%";
 
+            if (localStorage.getItem("changed") === "true") {
+                document.getElementsByClassName("imgProtractor")[0].style.top =
+                    "0px";
+            }
+
             dragElement(document.getElementsByClassName("protractor")[0]);
         }
 
@@ -99,6 +109,8 @@ document
         if (e.target.className === "rightEdge") {
             let elem = document.getElementsByClassName("imgProtractor")[0];
             elem.src = "./pictures/protractorRightSelected.svg";
+
+            localStorage.setItem("changed", "true");
         }
 
         // при манипуляциях с любым из краёв запускаем вращение
