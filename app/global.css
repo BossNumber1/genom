@@ -93,19 +93,36 @@ body {
     cursor: grab;
 }
 
+/* .protractor img {
+    width: 397px;
+    height: 209px;
+} */
+
+.protractor img {
+    /* width: 391px;
+    height: 203px; */
+    width: 201px;
+    height: 106px;
+}
+
 .leftEdge,
 .rightEdge {
-    /* border: 1px solid aqua; */
+    border: 1px solid aqua;
     display: flex;
     width: 50px;
-    height: 107px;
+    height: 105px;
     position: absolute;
     z-index: 1;
     cursor: pointer;
 }
 
+/* 
+
 .rightEdge {
-    left: 81%;
+    left: 82.5%; */
+
+.rightEdge {
+    left: 74%;
 }
 
 /* inputs styles */
