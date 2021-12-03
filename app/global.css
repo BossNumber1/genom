@@ -90,9 +90,6 @@ body {
     top: 277px;
     left: 934px;
     display: flex;
-}
-
-.imgProtractor {
     cursor: grab;
 }
 
@@ -100,7 +97,6 @@ body {
 .rightEdge {
     /* border: 1px solid aqua; */
     display: flex;
-    /* top: 50px; */
     width: 50px;
     height: 107px;
     position: absolute;
