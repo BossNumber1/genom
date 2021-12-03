@@ -91,6 +91,15 @@ body {
     display: flex;
 }
 
+/* .protractor {
+    position: absolute;
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+/* padding-top: 277px;
+    padding-left: 934px;
+} */
+
 .imgProtractor {
     cursor: grab;
 }
@@ -109,6 +118,7 @@ body {
 
 .rightEdge {
     left: 81%;
+    /* padding-left: 70px; */
 }
 
 /* inputs styles */
@@ -138,4 +148,18 @@ body {
     border-radius: 5px;
     /* left: 917px;
     top: 733px; */
+}
+
+.nameTask {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #369cb7;
+    margin: 0 0 5px 40px;
 }
